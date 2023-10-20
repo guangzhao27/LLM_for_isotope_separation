@@ -7,7 +7,9 @@ This project leverages a Large Language Model (LLM) to extract key settings and 
 2. Extract experiment setting and results from the selected section from model2.
 3. Create a dataset comprising experiment settings.
 4. Train/Fine-tune an inference model3 with the dataset, using it to design experiments
-
+## Useful Lib
+Llama index:
+https://github.com/jerryjliu/llama_index 
 ## Installation
 ## Usage
 ## Data
