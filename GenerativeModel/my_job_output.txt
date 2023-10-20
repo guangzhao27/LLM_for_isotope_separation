@@ -1,0 +1,98 @@
+usage: conda [-h] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'activate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'doctor', 'content-trust', 'render', 'repo', 'index', 'build', 'inspect', 'debug', 'server', 'token', 'verify', 'env', 'pack', 'convert', 'skeleton', 'metapackage', 'develop')
+2023-10-03 07:19:16.423155: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/global/homes/g/gzhao27/anaconda3/lib/python3.11/site-packages/transformers/generation/utils.py:1417: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+['0', 'Metal', 'M-cont', 'Element', 'E-cont', 'Acid', 'A-cont', 'Yield', 'Y-cont', 'Separation Method', 'S-cont', 'Resin', 'R-cont', 'Method of Analysis', 'T-cont', 'pH', 'P-cont', 'Chemical Compound', 'H-cont', 'Organic solvent', 'O-cont', 'Element Group', 'G-cont', 'Inorganic Solvent', 'I-cont', 'Flowrate', 'F-cont', 'Acid Concentration', 'C-cont', 'Reagent', 'X-cont']
+['0', 'Metal', 'M-cont', 'Element', 'E-cont', 'Acid', 'A-cont', 'Yield', 'Y-cont', 'Separation Method', 'S-cont', 'Resin', 'R-cont', 'Method of Analysis', 'T-cont', 'pH', 'P-cont', 'Chemical Compound', 'H-cont', 'Organic solvent', 'O-cont', 'Element Group', 'G-cont', 'Inorganic Solvent', 'I-cont', 'Flowrate', 'F-cont', 'Acid Concentration', 'C-cont', 'Reagent', 'X-cont', 'PAD']
+{'0': 0, 'Metal': 1, 'M-cont': 2, 'Element': 3, 'E-cont': 4, 'Acid': 5, 'A-cont': 6, 'Yield': 7, 'Y-cont': 8, 'Separation Method': 9, 'S-cont': 10, 'Resin': 11, 'R-cont': 12, 'Method of Analysis': 13, 'T-cont': 14, 'pH': 15, 'P-cont': 16, 'Chemical Compound': 17, 'H-cont': 18, 'Organic solvent': 19, 'O-cont': 20, 'Element Group': 21, 'G-cont': 22, 'Inorganic Solvent': 23, 'I-cont': 24, 'Flowrate': 25, 'F-cont': 26, 'Acid Concentration': 27, 'C-cont': 28, 'Reagent': 29, 'X-cont': 30, 'PAD': 31}
+Context: Please perform Named Entity Recognition (NER) on the following text with label entities [Metal] [Element] [Acid] [Yield] [Separation Method] [Resin] [Method of Analysis] [pH] [Chemical Compound] [Organic solvent] [Element Group] [Inorganic Solvent] [Flowrate] [Acid Concentration] [Reagent]: 
+Q: Extraction systems based on extraction of tetrafluoroboric acid (HBF4) with tributyl phosphate (TBP) and triamylphosphine oxide (TAPO) for boron isotope separation were studied. Tetrafluoroboric acid was studied in comparison with boric acid (H3BO3). The extraction isotherms at 20°C for four systems (boric and tetrafluoroboric acids extracted with TBP and TAPO in o-xylene) were obtained, and single-stage isotope separation factors for these four systems were determined.
+A: {'word': ' tetrafluoroboric acid', 'label': 'Acid'}
+{'word': 'HBF4', 'label': 'Acid'}
+{'word': 'tributyl phosphate', 'label': 'Separation Method'}
+{'word': 'TBP', 'label': 'Separation Method'}
+{'word': ' triamylphosphine oxide', 'label': 'Separation Method'}
+{'word': 'TAPO', 'label': 'Separation Method'}
+{'word': 'boron', 'label': 'Metal'}
+{'word': 'Tetrafluoroboric acid', 'label': 'Acid'}
+{'word': 'boric acid', 'label': 'Acid'}
+{'word': '(H3BO3', 'label': 'Acid'}
+{'word': 'boric', 'label': 'Acid'}
+{'word': 'tetrafluoroboric acids', 'label': 'Acid'}
+{'word': 'TBP ', 'label': 'Separation Method'}
+{'word': 'TAPO ', 'label': 'Separation Method'}
+{'word': 'o-xylene', 'label': 'Organic solvent'}
+
+Q: Lead-203  was  produced  by  proton  bombardment  of  natural  thallium  target.  For  producing  203Pb, natTl was electroplated on copper backing as target and was bombarded by energetic proton beam. After bom-bardment,  the  target  was  dissolved  in  1  M  HNO3.  Ion  exchange,  solvent  extraction,  and  nanomagnetic    ion-imprinted  polymer  methods  were  used  for  separating  203Pb  from  thallium.  The  separation  efficiency  of  these  methods  was  studied.  γ-Ray  spectroscopy  wa
+A: {'word': 'Lead-203', 'label': 'Metal'}
+{'word': 'thallium', 'label': 'Element'}
+{'word': '203Pb', 'label': 'Element'}
+{'word': 'natTl', 'label': 'Element'}
+{'word': 'copper ', 'label': 'Element'}
+{'word': ' 1  M  HNO3', 'label': 'Acid Concentration'}
+{'word': 'Ion  exchange', 'label': 'Separation Method'}
+{'word': 'solvent  extraction', 'label': 'Separation Method'}
+{'word': ' nanomagnetic    ion-imprinted  polymer  methods  ', 'label': 'Separation Method'}
+{'word': '203Pb', 'label': 'Element'}
+{'word': 'thallium', 'label': 'Element'}
+{'word': 'γ-Ray  spectroscopy', 'label': 'Method of Analysis'}
+
+Q: The mixture of nuclides, remaining after the separation of thorium isotopes contains 228Ra (in which 228Ac accumulates) and also 224Ra (in equilibrium with other decay products, including gaseous 220Rn) and the stable 208Pb. A single-stage isolation of 228Ac from a mixture of this kind is a complicated task, and deep purification to remove 224Ra is necessary for obtaining the radiochemically pure 228Ac. For this reason, the mixture was kept for one month till the complete decay of 224Ra. In the 
+A: 
+    
+
+
+*** Generate:
+<s> Context: Please perform Named Entity Recognition (NER) on the following text with label entities [Metal] [Element] [Acid] [Yield] [Separation Method] [Resin] [Method of Analysis] [pH] [Chemical Compound] [Organic solvent] [Element Group] [Inorganic Solvent] [Flowrate] [Acid Concentration] [Reagent]: 
+Q: Extraction systems based on extraction of tetrafluoroboric acid (HBF4) with tributyl phosphate (TBP) and triamylphosphine oxide (TAPO) for boron isotope separation were studied. Tetrafluoroboric acid was studied in comparison with boric acid (H3BO3). The extraction isotherms at 20°C for four systems (boric and tetrafluoroboric acids extracted with TBP and TAPO in o-xylene) were obtained, and single-stage isotope separation factors for these four systems were determined.
+A: {'word': ' tetrafluoroboric acid', 'label': 'Acid'}
+{'word': 'HBF4', 'label': 'Acid'}
+{'word': 'tributyl phosphate', 'label': 'Separation Method'}
+{'word': 'TBP', 'label': 'Separation Method'}
+{'word': ' triamylphosphine oxide', 'label': 'Separation Method'}
+{'word': 'TAPO', 'label': 'Separation Method'}
+{'word': 'boron', 'label': 'Metal'}
+{'word': 'Tetrafluoroboric acid', 'label': 'Acid'}
+{'word': 'boric acid', 'label': 'Acid'}
+{'word': '(H3BO3', 'label': 'Acid'}
+{'word': 'boric', 'label': 'Acid'}
+{'word': 'tetrafluoroboric acids', 'label': 'Acid'}
+{'word': 'TBP ', 'label': 'Separation Method'}
+{'word': 'TAPO ', 'label': 'Separation Method'}
+{'word': 'o-xylene', 'label': 'Organic solvent'}
+
+Q: Lead-203  was  produced  by  proton  bombardment  of  natural  thallium  target.  For  producing  203Pb, natTl was electroplated on copper backing as target and was bombarded by energetic proton beam. After bom-bardment,  the  target  was  dissolved  in  1  M  HNO3.  Ion  exchange,  solvent  extraction,  and  nanomagnetic    ion-imprinted  polymer  methods  were  used  for  separating  203Pb  from  thallium.  The  separation  efficiency  of  these  methods  was  studied.  γ-Ray  spectroscopy  wa
+A: {'word': 'Lead-203', 'label': 'Metal'}
+{'word': 'thallium', 'label': 'Element'}
+{'word': '203Pb', 'label': 'Element'}
+{'word': 'natTl', 'label': 'Element'}
+{'word': 'copper ', 'label': 'Element'}
+{'word': ' 1  M  HNO3', 'label': 'Acid Concentration'}
+{'word': 'Ion  exchange', 'label': 'Separation Method'}
+{'word': 'solvent  extraction', 'label': 'Separation Method'}
+{'word': ' nanomagnetic    ion-imprinted  polymer  methods  ', 'label': 'Separation Method'}
+{'word': '203Pb', 'label': 'Element'}
+{'word': 'thallium', 'label': 'Element'}
+{'word': 'γ-Ray  spectroscopy', 'label': 'Method of Analysis'}
+
+Q: The mixture of nuclides, remaining after the separation of thorium isotopes contains 228Ra (in which 228Ac accumulates) and also 224Ra (in equilibrium with other decay products, including gaseous 220Rn) and the stable 208Pb. A single-stage isolation of 228Ac from a mixture of this kind is a complicated task, and deep purification to remove 224Ra is necessary for obtaining the radiochemically pure 228Ac. For this reason, the mixture was kept for one month till the complete decay of 224Ra. In the 
+A: 
+     {'word': ' 228Ra', 'label': 'Metal'}
+     {'word': '228Ac', 'label': 'Metal'}
+     {'word': '224Ra', 'label': 'Metal'}
+     {'word': '220Rn', 'label': 'Chemical Compound'}
+     {'word': '208Pb', 'label': 'Element'}
+     {'word': '224Ra', 'label': 'Metal'}
+
+Q: The most promising method for separation of 188W is the fractionation of the fission products. This is a rather complicated procedure. The first stage is the separation of 137Cs from other fission products. The separation is performed by means of extraction with organic solvents. The second stage is the separation of 188W from the other ruthenium isotopes. It is carried out by means of ion-exchange methods. The most promising method for separation of 188W is the fractionation of the fission products. This is a rather complicated procedure. The first stage is the separation of 137Cs from other fission products. The separation is performed by means of extraction with organic solvents. The second stage is the separation of 188W from the other ruthenium isotopes. It is carried out by means of ion-exchange methods.
+A: {'word': ' 137Cs', 'label': 'Chemical Compound'}
+{'word': '188W', 'label': 'Metal'}
+{'word': ' 137Cs', 'label': 'Chemical Compound'}
+{'word': 'ruthenium isotopes', 'label': 'Element Group'}
+{'word': '188W', 'label': 'Metal'}
+{'word': ' 188W', 'label': 'Metal'}
+{'word': ' 188W', 'label': 'Metal'}
+
+Q: The 203Pb isotope is produced by the 18O(p,n)203Pb nuclear reaction. A mixture of 203Pb and 203Bi is obtained as the final product of the
